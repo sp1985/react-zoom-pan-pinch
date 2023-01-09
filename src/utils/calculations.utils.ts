@@ -3,6 +3,8 @@
  * eg. roundNumber(2.34343, 1) => 2.3
  */
 export const roundNumber = (num: number, decimal: number) => {
+  //SPO fix to solve scale issue:
+  decimal = 5;
   return Number(num.toFixed(decimal));
 };
 
